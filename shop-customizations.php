@@ -14,5 +14,9 @@ function custom_field_display_below_title(){
     if( $text = get_field( 'anbaumethode', $product->get_id() ) ) {
         echo '<p class="anbaumethode">' . $text . '</p>';
     }
+
+    if( $text = get_field( 'cbd_anteil', $product->get_id() ) ) {
+        echo '<p class="cbd-anteil">' . $text . '</p>';
+    }
     
 }
