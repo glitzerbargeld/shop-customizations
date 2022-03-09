@@ -12,11 +12,11 @@ function custom_field_display_below_title(){
 
     // Display ACF text
     if( $text = get_field( 'anbaumethode', $product->get_id() ) ) {
-        echo '<p class="anbaumethode">' . $text . '</p>';
+        echo '<span class="anbaumethode">' . $text . '</span>';
     }
 
     if( $text = get_field( 'cbd_gehalt', $product->get_id() ) ) {
-        echo '<p class="cbd-anteil">' . $text . '</p>';
+        echo '<span class="cbd-anteil">' . $text . '</span>';
     }
     
 }
