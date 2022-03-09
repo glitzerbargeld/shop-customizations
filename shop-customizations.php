@@ -12,7 +12,7 @@ function custom_field_display_below_title(){
     global $product;
     // Display ACF text
     if( $anbau = get_field( 'anbaumethode', $product->get_id() ) ) {
-        echo '<img src="' . plugin_dir_url(__FILE__) . 'icons/icon_' . strtolower($anbau) . '.svg' . '" width="30"><span class="anbaumethode">' . $anbau . '</span>';
+        echo '<span class="anbaumethode"><img src="' . plugin_dir_url(__FILE__) . 'icons/icon_' . strtolower($anbau) . '.svg' . '" width="30">' . $anbau . '</span>';
     }
 
     if( $text = get_field( 'cbd_gehalt', $product->get_id() ) ) {
