@@ -20,7 +20,7 @@ function custom_field_display_below_title(){
     }
 
     if( $text = get_field( 'cbd_gehalt', $product->get_id() ) ) {
-        echo '<span class="cbd-anteil" style="background: rgba(0,255,0,'. ceil($text) * 0.1 . '"><img src="' . plugin_dir_url(__FILE__) . 'icons/icon_cbd_gehalt.svg">'  . $text . '%</span>';
+        echo '<span class="cbd-anteil" style="background: rgba(0,255,0,'. ceil($text) * 0.01 . '"><img src="' . plugin_dir_url(__FILE__) . 'icons/icon_cbd_gehalt.svg">'  . $text . '%</span>';
     }
 
    echo '</div>';
