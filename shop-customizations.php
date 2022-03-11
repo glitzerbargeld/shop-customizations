@@ -8,7 +8,7 @@
 
 
 
- /** ADDS Custom Fields to Products on Shop Page */
+/** Fügt die Produktinfos "CBD-Anteil" und "Anbaumethode" zu den Blüten auf der Shop Übersicht hinzu */
 
 add_action( 'woocommerce_after_shop_loop_item_title', 'custom_field_display_below_title', 2 );
 function custom_field_display_below_title(){
@@ -27,6 +27,9 @@ function custom_field_display_below_title(){
    echo '</div>';
     
 }
+
+/**Ändert den Standardtext des Add-to-Cart-Buttons von variablen Produkten zu "Zum Produkt" */
+
 add_filter( 'woocommerce_product_add_to_cart_text', function( $text ) {
 	global $product;
 	if ( $product->is_type( 'variable' ) ) {
