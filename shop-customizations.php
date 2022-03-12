@@ -28,7 +28,7 @@ function custom_field_display_below_title(){
     
 }
 
-/**Ändert den Standardtext des Add-to-Cart-Buttons von variablen Produkten zu "Zum Produkt" */
+/**Ändert den Standardtext des Add-to-Cart-Buttons von variablen Produkten zu "Zum Produkt" 
 
 add_filter( 'woocommerce_product_add_to_cart_text', function( $text ) {
 	global $product;
@@ -37,6 +37,8 @@ add_filter( 'woocommerce_product_add_to_cart_text', function( $text ) {
 	}
 	return $text;
 }, 10 );
+
+*/
 
 
 /**Ändert den Preis von Cross Sell Items */
