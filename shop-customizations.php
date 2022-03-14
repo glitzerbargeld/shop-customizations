@@ -49,6 +49,6 @@ add_filter('gettext', 'change_ymal');
 
 function change_ymal($translated) 
 {
-	$translated = str_ireplace('You may also like', 'Add your new text here', $translated);
+	$translated = str_ireplace('Bist du vielleicht interessiert an ...', 'Passt perfekt zu deinem Einkauf:', $translated);
 	return $translated; 
 }
