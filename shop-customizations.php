@@ -43,3 +43,16 @@ add_filter( 'woocommerce_product_add_to_cart_text', function( $text ) {
 
 /**Ändert den Preis von Cross Sell Items */
 
+add_filter( 'gettext', 'misha_custom_related_products_text', 20, 3 );
+function misha_custom_related_products_text( $translated_text, $text, $domain ) {
+
+	if( $translated_text == 'Related products' // for Related products
+	|| $translated_text == 'You may also like&hellip;' || // for Upsells
+	|| $translated_text == 'Passt perfekt zu deinem Warenkorb!' ) { // for Cross-sells
+		$translated_text = 'Do not miss these products too'; // new title
+	}
+
+	return $translated_text;
+
+}
+
