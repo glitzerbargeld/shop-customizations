@@ -45,10 +45,11 @@ add_filter( 'woocommerce_product_add_to_cart_text', function( $text ) {
 
 // Change "You may also like..." text in WooCommerce
 
-add_filter('gettext', 'change_ymal');
+add_filter( 'gettext', 'meine_woocommerce_uebersetzung' );
 
-function change_ymal($translated) 
-{
-	$translated = str_ireplace('Bist du vielleicht interessiert an ...', 'Passt perfekt zu deinem Einkauf:', $translated);
-	return $translated; 
+function meine_woocommerce_uebersetzung( $translation, $text, $domain ) {
+  if ('Bist du vielleicht interessiert an ...' === $translation ) {
+  $translation = 'Passt perfekt zu deinem Einkauf:';
+  }
+return $translation;
 }
