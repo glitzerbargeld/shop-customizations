@@ -40,16 +40,3 @@ add_filter( 'woocommerce_product_add_to_cart_text', function( $text ) {
 
 */
 
-
-/**Ändert den Preis von Cross Sell Items */
-
-// Change "You may also like..." text in WooCommerce
-
-add_filter( 'gettext', 'meine_woocommerce_uebersetzung' );
-
-function meine_woocommerce_uebersetzung( $translation, $text, $domain ) {
-  if ('Bist du vielleicht interessiert an ...' === $translation ) {
-  $translation = 'Passt perfekt zu deinem Einkauf:';
-  }
-return $translation;
-}
