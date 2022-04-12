@@ -28,9 +28,6 @@ function custom_field_display_below_title(){
     
 }
 
-
-
-
 add_action('woocommerce_before_add_to_cart_button', 'ab_buttons');
 
 function ab_buttons() {
@@ -47,7 +44,7 @@ function ab_buttons() {
           	  	<span class="anbaumethode" data-el="outdoor"><img src="' . plugin_dir_url(__FILE__) . 'icons/icon_indoor.svg " width="30">' . 'Indoor</div>
       		  </div>
     		  </div>
-  		'
+  		';
   	}
 }
 
