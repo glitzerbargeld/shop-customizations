@@ -28,6 +28,30 @@ function custom_field_display_below_title(){
     
 }
 
+
+
+
+add_action('woocommerce_before_add_to_cart_button', 'ab_buttons');
+
+function ab_buttons() {
+
+	global $product; 
+	
+	$product_title = $product->get_name();
+	if ($product_title == 'SANALEO Sprinkles') {
+		echo '
+			<div class="content">
+				<div class="ab-wrapper">
+          	  	<span class="anbaumethode" data-el="outdoor"><img src="' . plugin_dir_url(__FILE__) . 'icons/icon_outdoor.svg " width="30">' . 'Outdoor</div>
+          	  	<span class="anbaumethode" data-el="outdoor"><img src="' . plugin_dir_url(__FILE__) . 'icons/icon_greenhouse.svg " width="30">' . 'Greenhouse</div>
+          	  	<span class="anbaumethode" data-el="outdoor"><img src="' . plugin_dir_url(__FILE__) . 'icons/icon_indoor.svg " width="30">' . 'Indoor</div>
+      		  </div>
+    		  </div>
+  		'
+  	}
+}
+
+
 /**Ändert den Standardtext des Add-to-Cart-Buttons von variablen Produkten zu "Zum Produkt" 
 
 add_filter( 'woocommerce_product_add_to_cart_text', function( $text ) {
@@ -40,3 +64,11 @@ add_filter( 'woocommerce_product_add_to_cart_text', function( $text ) {
 
 */
 
+add_filter( 'gettext', 'meine_woocommerce_uebersetzung' );
+
+function meine_woocommerce_uebersetzung( $translation, $text, $domain ) {
+  if ('Vielleicht bist du interessiert an ...' === $translation ) {
+  $translation = 'Passt perfekt zu deinem Einkauf';
+  }
+return $translation;
+}
