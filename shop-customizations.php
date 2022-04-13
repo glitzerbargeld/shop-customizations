@@ -28,6 +28,10 @@ function custom_field_display_below_title(){
     
 }
 
+
+/*CUSTOMIZATIONS FOR SPRINKLES PRODUCT PAGE*/
+
+
 add_action('woocommerce_before_add_to_cart_button', 'ab_buttons');
 
 function ab_buttons() {
@@ -39,6 +43,7 @@ function ab_buttons() {
 	if ($product_title == 'SANALEO Sprinkles') {
 
         wp_enqueue_style( 'ab_buttons', plugins_url( '/css/ab_buttons.css', __FILE__ ));
+        wp_enqueue_script( 'ab_buttons', plugins_url( '/js/ab_buttons.js', __FILE__ ));
 
 		echo '
 			<div id ="abm-btn-wrapper" class="content">
