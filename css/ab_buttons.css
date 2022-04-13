@@ -15,6 +15,10 @@
     background: green;
 }
 
+#abm-btn-wrapper .anbaumethode img{
+    pointer-events: none;
+}
+
 #outer-cirle {
     display: none !important;
 }
