@@ -1,4 +1,4 @@
-const sorte = document.querySelectorAll('.anbautmehtode');
+const sorte = document.querySelectorAll('.anbaumethode');
 const select = document.getElementById("pa_anbau");
 const dropdownselect = jQuery("#pa_anbau");
 const selectoptions = select.options;
