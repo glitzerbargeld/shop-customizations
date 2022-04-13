@@ -32,13 +32,16 @@ add_action('woocommerce_before_add_to_cart_button', 'ab_buttons');
 
 function ab_buttons() {
 
-	global $product; 
+	global $product;
 	
 	$product_title = $product->get_name();
 	
 	if ($product_title == 'SANALEO Sprinkles') {
+
+        wp_enqueue_style( 'ab_buttons', plugins_url( '/css/ab_buttons.css', __FILE__ ));
+
 		echo '
-			<div class="content">
+			<div id ="abm-btn-wrapper" class="content">
           	  	<span class="anbaumethode" data-el="outdoor"><img src="' . plugin_dir_url(__FILE__) . 'icons/icon_outdoor.svg " width="30">' . 'Outdoor</span>
           	  	<span class="anbaumethode" data-el="outdoor"><img src="' . plugin_dir_url(__FILE__) . 'icons/icon_greenhouse.svg " width="30">' . 'Greenhouse</span>
           	  	<span class="anbaumethode" data-el="outdoor"><img src="' . plugin_dir_url(__FILE__) . 'icons/icon_indoor.svg " width="30">' . 'Indoor</span>

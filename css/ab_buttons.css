@@ -1,0 +1,16 @@
+#abm-btn-wrapper {
+    gap: 10px;
+}
+
+#abm-btn-wrapper .anbaumethode{
+    cursor: pointer;
+    background: white;
+}
+
+#abm-btn-wrapper .anbaumethode:hover {
+    background: green;
+}
+
+#abm-btn-wrapper .anbaumethode:active {
+    background: green;
+}
