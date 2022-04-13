@@ -13,11 +13,7 @@
 }
 
 #abm-btn-wrapper .anbaumethode:hover {
-    background: green;
-}
-
-#abm-btn-wrapper .anbaumethode:active {
-    background: green;
+    background: rgb(136, 175, 136);
 }
 
 #abm-btn-wrapper .anbaumethode img{
