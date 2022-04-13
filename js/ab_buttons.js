@@ -9,9 +9,6 @@ for (var i = 0; i < ab_select.options.length; i++) {
 }
 
 ab_sorte.forEach(el => {
-    if (ab_selectoptionsarray.includes(el.getAttribute("data-el"))) {
-        el.parentElement.style.display = "block";
-    }
     if (el.getAttribute("data-el") == ab_select.value) {
         el.style.backgroundColor = "rgb(136, 175, 136)"
     }
