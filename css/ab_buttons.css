@@ -15,6 +15,12 @@
     background: green;
 }
 
+#abm-btn-wrapper .anbaumethode img {
+    z-index: -999;
+}
+
 #outer-cirle {
     display: none !important;
 }
+
+
