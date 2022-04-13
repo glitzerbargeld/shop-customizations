@@ -24,7 +24,7 @@ ab_sorte.forEach(el => el.addEventListener('click', event => {
     event.preventDefault();
     ab_select.value = event.target.getAttribute("data-el");
     ab_dropdownselect.change();
-    ab_sorte.forEach(el => el.style.backgroundColor = "gray");
+    ab_sorte.forEach(el => el.style.backgroundColor = "white");
     event.target.style.backgroundColor = "rgb(136, 175, 136)";
 
 
