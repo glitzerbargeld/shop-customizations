@@ -43,7 +43,8 @@ function ab_buttons() {
 	if ($product_title == 'SANALEO Sprinkles') {
 
         wp_enqueue_style( 'ab_buttons', plugins_url( '/css/ab_buttons.css', __FILE__ ));
-        wp_enqueue_script( 'ab_buttons', plugins_url( '/js/ab_buttons.js', __FILE__ ));
+        wp_register_script( 'ab_buttons', plugins_url( '/js/ab_buttons.js', __FILE__ ), array( 'jquery' ), '1.0', true );
+        wp_enqueue_script( 'ab_buttons');
 
 		echo '
 			<div id ="abm-btn-wrapper" class="content">
