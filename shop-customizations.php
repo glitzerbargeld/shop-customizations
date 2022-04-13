@@ -27,24 +27,3 @@ function custom_field_display_below_title(){
    echo '</div>';
     
 }
-
-/**Ändert den Standardtext des Add-to-Cart-Buttons von variablen Produkten zu "Zum Produkt" 
-
-add_filter( 'woocommerce_product_add_to_cart_text', function( $text ) {
-	global $product;
-	if ( $product->has_child() ) {
-		$text = $product->is_purchasable() ? __( 'Zum Produkt', 'woocommerce' ) : __( 'Read more', 'woocommerce' );
-	}
-	return $text;
-}, 10 );
-
-*/
-
-add_filter( 'gettext', 'meine_woocommerce_uebersetzung' );
-
-function meine_woocommerce_uebersetzung( $translation, $text, $domain ) {
-  if ('Vielleicht bist du interessiert an ...' === $translation ) {
-  $translation = 'Passt perfekt zu deinem Einkauf';
-  }
-return $translation;
-}
