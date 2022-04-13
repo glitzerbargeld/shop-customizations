@@ -32,9 +32,9 @@ function custom_field_display_below_title(){
 /*CUSTOMIZATIONS FOR SPRINKLES PRODUCT PAGE*/
 
 
-add_action('woocommerce_before_add_to_cart_button', 'ab_buttons');
+add_action('woocommerce_before_add_to_cart_button', 'sprinkles_customizations');
 
-function ab_buttons() {
+function sprinkles_customizations() {
 
 	global $product;
 	
@@ -42,7 +42,7 @@ function ab_buttons() {
 	
 	if ($product_title == 'SANALEO Sprinkles') {
 
-        wp_enqueue_style( 'ab_buttons', plugins_url( '/css/ab_buttons.css', __FILE__ ));
+        wp_enqueue_style( 'sprinkles', plugins_url( '/css/sprinkles.css', __FILE__ ));
         wp_register_script( 'ab_buttons', plugins_url( '/js/ab_buttons.js', __FILE__ ), array( 'jquery' ), '1.0', true );
         wp_enqueue_script( 'ab_buttons');
 

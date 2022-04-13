@@ -1,3 +1,8 @@
+.woocommerce-variation-add-to-cart {
+    width: 100%;
+    margin: 0;
+}
+
 #abm-btn-wrapper {
     gap: 10px;
 }
