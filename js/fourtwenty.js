@@ -3,7 +3,7 @@ function copyToClipboard(element) {
     jQuery("body").append($temp);
     $temp.val(jQuery(element).text()).select();
     document.execCommand("copy");
-    element.innerHTML("Code kopiert");
+    element.html("Code kopiert");
     $temp.remove();
   }
   
