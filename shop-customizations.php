@@ -64,7 +64,7 @@ function fourTwenty_customizations() {
     wp_enqueue_script( 'fourtwenty-script');
 
     echo '
-    <div id="fourtwenty"><p>4/20 ANGEBOT!! Erhalte heute <span20%</span> auf alle Produkte mit dem Gutscheincode:</p><p id="p1">four20</p>
+    <div id="fourtwenty"><p>4/20 ANGEBOT!! Erhalte heute <span>20%</span> auf alle Produkte mit dem Gutscheincode:</p><p id="p1">four20</p>
     <button onclick="copyToClipboard(\'#p1\')">Code kopieren</button>
     </div>';
 }
