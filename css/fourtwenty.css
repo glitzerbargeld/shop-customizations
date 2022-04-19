@@ -45,3 +45,12 @@
       top: 5px;
   }
   
+
+  @media screen and (max-width:575px) {
+      #fourtwenty {
+          text-align: center
+      }
+      #fourtwenty button {
+          margin: 0 20px;
+      }
+  }
