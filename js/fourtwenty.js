@@ -11,7 +11,7 @@ function copyToClipboard(element) {
   }
 
 
-var countDownDate = new Date("April 20, 2022 23:59:59").getTime();
+var countDownDate = new Date("April 21, 2022 00:00:00").getTime();
 
 // Update the count down every 1 second
 var x = setInterval(function() {
