@@ -64,8 +64,8 @@ function fourTwenty_customizations() {
     wp_enqueue_script( 'fourtwenty-script');
 
     echo '
-    <p style="color:wheat;font-size:55px;text-align:center;">How to copy a TEXT to Clipboard on a Button-Click</p>
-    <p id="p1">Test</p>
-    <button onclick="copyToClipboard(\'#p1\')">Copy TEXT 1</button>';
+    <div id="fourtwenty"><p>Erhalte HEUTE 20% auf alle Produkte mit dem Gutscheincode:</p><p id="p1">four20</p>
+    <button onclick="copyToClipboard(\'#p1\')">Code kopieren</button>
+    </div>';
 }
 
