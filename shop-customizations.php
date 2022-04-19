@@ -59,13 +59,18 @@ function sprinkles_customizations() {
 add_action('astra_header_after', 'fourTwenty_customizations');
 
 function fourTwenty_customizations() {
+
+    if(!is_product()) {
     wp_enqueue_style( 'fourtwenty-styles', plugins_url( '/css/fourtwenty.css', __FILE__ ));
     wp_register_script( 'fourtwenty-script', plugins_url( '/js/fourtwenty.js', __FILE__ ), array( 'jquery' ), '1.0', true );
     wp_enqueue_script( 'fourtwenty-script');
+
+    
 
     echo '
     <div id="fourtwenty"><p>4/20 ANGEBOT!! Erhalte heute <span>20%</span> auf alle Produkte mit dem Gutscheincode:</p><p id="p1">four20</p>
     <button onclick="copyToClipboard(\'#p1\')">Code kopieren</button>
     </div>';
+}
 }
 
