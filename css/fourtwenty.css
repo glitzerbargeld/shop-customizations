@@ -32,4 +32,11 @@
       font-size: 30px;
       font-weight: 900;
   }
+
+  #fourtwenty #close-btn {
+      color: white;
+      font-weight: 900;
+      background: lightcoral;
+      border-radius: 20px;
+  }
   
