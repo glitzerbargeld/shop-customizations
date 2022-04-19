@@ -66,6 +66,6 @@ function fourTwenty_customizations() {
     echo '
     <p style="color:wheat;font-size:55px;text-align:center;">How to copy a TEXT to Clipboard on a Button-Click</p>
     <p id="p1">Test</p>
-    <button onclick="copyToClipboard("#p1")">Copy TEXT 1</button>';
+    <button onclick="copyToClipboard(\'#p1\')">Copy TEXT 1</button>';
 }
 
