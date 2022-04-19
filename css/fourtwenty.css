@@ -5,7 +5,7 @@
     margin: 20px auto;
     justify-content: center;
     background: #3e9b74;
-    padding: 20px 10px;
+    padding: 100px 20px;
     align-items: center;
     flex-wrap: wrap;
     border-radius: 10px;
@@ -48,6 +48,7 @@
 
   @media screen and (max-width:575px) {
       #fourtwenty {
+          padding: 30px 10px 20px 0px;
           text-align: center
       }
       #fourtwenty button {
