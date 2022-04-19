@@ -56,3 +56,16 @@ function sprinkles_customizations() {
   	}
 }
 
+add_action('astra_header_after', 'fourTwenty_customizations');
+
+function fourTwenty_customizations() {
+    wp_enqueue_style( 'fourtwenty-styles', plugins_url( '/css/fourtwenty.css', __FILE__ ));
+    wp_register_script( 'fourtwenty-script', plugins_url( '/js/fourtwenty.js', __FILE__ ), array( 'jquery' ), '1.0', true );
+    wp_enqueue_script( 'fourtwenty-scrips');
+
+    echo '
+    <p style="color:wheat;font-size:55px;text-align:center;">How to copy a TEXT to Clipboard on a Button-Click</p>
+    <p id="p1"</p>
+    <button onclick="copyToClipboard("#p1")">Copy TEXT 1</button>';
+}
+
