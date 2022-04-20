@@ -90,6 +90,7 @@ function injectSEO() {
     if(is_product_category()) {
         $term = get_queried_object();
         $seo_text = get_field('seo_text', $term);
+        echo $seo_text;
     }
 }
 
