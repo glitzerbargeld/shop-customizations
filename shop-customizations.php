@@ -9,6 +9,7 @@
 
 
 /** Fügt die Produktinfos "CBD-Anteil" und "Anbaumethode" zu den Blüten auf der Shop Übersicht hinzu */
+#######################################################################################################
 
 add_action( 'woocommerce_after_shop_loop_item_title', 'custom_field_display_below_title', 2 );
 function custom_field_display_below_title(){
@@ -30,6 +31,7 @@ function custom_field_display_below_title(){
 
 
 /*CUSTOMIZATIONS FOR SPRINKLES PRODUCT PAGE*/
+#############################################
 
 
 add_action('woocommerce_before_add_to_cart_button', 'sprinkles_customizations');
@@ -56,6 +58,10 @@ function sprinkles_customizations() {
   	}
 }
 
+
+/**PROMO BANNER FOURTWENTY */
+#############################
+
 add_action('astra_header_after', 'fourTwenty_customizations');
 
 function fourTwenty_customizations() {
@@ -73,5 +79,17 @@ function fourTwenty_customizations() {
     <button onclick="copyToClipboard(\'#p1\')">Code kopieren</button>
     </div>';
 }
+}
+
+
+/**PRODUCT CATEGORY SEO TEXT */
+
+add_action('woocommerce_after_shop_loop', 'injectSEO');
+
+function injectSEO() {
+    if(is_product_category()) {
+        $term = get_queried_object();
+        $seo_text = get_field('seo_text', $term);
+    }
 }
 
