@@ -84,6 +84,8 @@ function fourTwenty_customizations() {
 
 /**PRODUCT CATEGORY SEO TEXT */
 
+/*
+
 add_action('woocommerce_after_shop_loop', 'injectSEO');
 
 function injectSEO() {
@@ -94,3 +96,4 @@ function injectSEO() {
     }
 }
 
+*/
