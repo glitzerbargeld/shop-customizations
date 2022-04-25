@@ -42,7 +42,7 @@ function sprinkles_customizations() {
 	
 	$product_title = $product->get_name();
 	
-	if ($product_title == 'SANALEO Sprinkles') {
+	if ($product_title == 'Sprinkles') {
 
         wp_enqueue_style( 'sprinkles', plugins_url( '/css/sprinkles.css', __FILE__ ));
         wp_register_script( 'ab_buttons', plugins_url( '/js/ab_buttons.js', __FILE__ ), array( 'jquery' ), '1.0', true );
