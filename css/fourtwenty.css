@@ -19,7 +19,6 @@
     font-family: Montserrat;
     text-align: center;
     margin: 10px;
-    margin: 0 6px;
     color: #ffff00;
     font-weight: 700;
   }
@@ -44,7 +43,7 @@
   #fourtwenty #close-btn {
       color: white;
       font-weight: 900;
-      background: lightcoral;
+      background: #ffff00;
       border-radius: 20px;
       padding: 0 7px;
       position: absolute;
