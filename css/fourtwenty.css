@@ -5,7 +5,8 @@
     margin: 20px auto;
     justify-content: center;
     background: url("../media/img/gmm.jpg");
-    padding: 10px 20px;
+    background-size: cover;
+    padding: 40px 20px;
     align-items: center;
     flex-wrap: wrap;
     border-radius: 10px;
