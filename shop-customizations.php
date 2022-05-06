@@ -59,7 +59,7 @@ function sprinkles_customizations() {
 }
 
 
-/**PROMO BANNER FOURTWENTY 
+PROMO BANNER FOURTWENTY 
 #############################
 
 add_action('astra_header_after', 'fourTwenty_customizations');
