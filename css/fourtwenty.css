@@ -4,7 +4,7 @@
     width: 80%;
     margin: 20px auto;
     justify-content: center;
-    background: url("/media/img/4096-2731-max.jpg");
+    background: url("../media/img/4096-2731-max.jpg");
     padding: 10px 20px;
     align-items: center;
     flex-wrap: wrap;
