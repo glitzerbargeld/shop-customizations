@@ -75,7 +75,7 @@ function fourTwenty_customizations() {
 
     echo '
     
-    <div id="fourtwenty"><p>4/20 ANGEBOT!! Erhalte heute <span>20%</span> auf alle Produkte mit dem Gutscheincode:</p><p id="p1">four20</p>
+    <div id="fourtwenty"><p>Global Marijuana March Angebot: Erhalte heute <span>20%</span> auf alle Produkte mit dem Gutscheincode:</p><p id="p1">GMM2022</p>
     <button onclick="copyToClipboard(\'#p1\')"><img src="' . plugins_url( '/icons/icons8-kopieren-48.png', __FILE__ ) . '"></button>
     </div>';
 }
