@@ -76,7 +76,7 @@ function fourTwenty_customizations() {
     echo '
     
     <div id="fourtwenty"><p>4/20 ANGEBOT!! Erhalte heute <span>20%</span> auf alle Produkte mit dem Gutscheincode:</p><p id="p1">four20</p>
-    <button onclick="copyToClipboard(\'#p1\')">Code kopieren</button>
+    <button onclick="copyToClipboard(\'#p1\')"><img src="/icons/icons8-kopieren-48.png"></button>
     </div>';
 }
 }
