@@ -59,7 +59,7 @@ function sprinkles_customizations() {
 }
 
 
-/**Promo Banner */
+/**Promo Banner 
 #############################
 
 add_action('astra_header_after', 'fourTwenty_customizations');
@@ -80,20 +80,4 @@ function fourTwenty_customizations() {
     </div>';
 }
 }
-
-
-/**PRODUCT CATEGORY SEO TEXT */
-
-/*
-
-add_action('woocommerce_after_shop_loop', 'injectSEO');
-
-function injectSEO() {
-    if(is_product_category()) {
-        $term = get_queried_object();
-        $seo_text = get_field('seo_text', $term);
-        echo $seo_text;
-    }
-}
-
 */
