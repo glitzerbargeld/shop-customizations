@@ -62,12 +62,11 @@ function sprinkles_customizations() {
 function container_size_buds_new(){
     echo '
       <div class="content">
-        <div class="glass-wrapper">
-        <div class="baggie-wrapper" data-el="1g"><div class="baggie"><p>1g</p></div></div>
             <span class="glass"><div class="buds" data-el="2g">2g</div></span>
             <span class="glass"><div class="buds" data-el="5g">5g</div></span>
             <span class="glass"><div class="buds" data-el="10g"">10g</div></span>
             <span class="glass"><div class="buds" data-el="20g"">20g</div></span>
+            <div class="glass-wrapper"><div class="baggie-wrapper" data-el="1g"><div class="baggie"><p>1g</p></div></div>
         </div>
       </div>
     ';
