@@ -59,7 +59,13 @@ function sprinkles_customizations() {
 }
 
 
+/**ADD CONTAINERS TO BUD PRODUCT PAGES */
+
 function container_size_buds_new(){
+
+    wp_register_script( 'buds_container', plugins_url( '/js/buds_container.js', __FILE__ ), array( 'jquery' ), '1.0', true );
+    wp_enqueue_script( 'buds_container');
+
     echo '
       <div class="content"> <div class="glass-wrapper">
       <div class="baggie-wrapper bud-container" data-el="1g"><div class="baggie" data-el="1g"><p>1g</p></div></div>
