@@ -73,7 +73,7 @@ function container_size_buds_new(){
         <div class="glass-wrapper">
             <div class="baggie-wrapper">
                 <div class="baggie bud-container" style="background:' . $baggie_farbe . ';" data-el="1g">
-                    <p style="' . $baggie_farbe_innen . '">1g</p>
+                    <p style="background: ' . $baggie_farbe_innen . '">1g</p>
                 </div>
             </div>
             <span class="glass"><div class="buds bud-container" data-el="2g">2g</div></span>
