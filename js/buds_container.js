@@ -1,4 +1,5 @@
-const buds = document.querySelectorAll('.buds');
+const container = document.querySelectorAll('.container');
+
     const select = document.getElementById("pa_menge");
     const dropdownselect = jQuery("#pa_menge");
     const selectoptions = select.options;
@@ -8,7 +9,7 @@ const buds = document.querySelectorAll('.buds');
         selectoptionsarray.push(select.options[i].value);
     }
 
-    buds.forEach(el => {
+    container.forEach(el => {
         if (selectoptionsarray.includes(el.getAttribute("data-el"))) {
             el.parentElement.style.display = "block";
         }
@@ -20,21 +21,21 @@ const buds = document.querySelectorAll('.buds');
 
 
 
-    buds.forEach(el => el.addEventListener('click', event => {
+    container.forEach(el => el.addEventListener('click', event => {
         event.preventDefault();
         select.value = event.target.getAttribute("data-el");
         dropdownselect.change();
-        buds.forEach(el => el.style.backgroundColor = "gray");
+        container.forEach(el => el.style.backgroundColor = "gray");
         event.target.style.backgroundColor = "rgb(136, 175, 136)";
 
 
     }));
 
-    buds.forEach(el => el.addEventListener('touchstart', event => {
+    container.forEach(el => el.addEventListener('touchstart', event => {
         event.preventDefault();
         select.value = event.target.getAttribute("data-el");
         dropdownselect.change();
-        buds.forEach(el => el.style.backgroundColor = "gray");
+        container.forEach(el => el.style.backgroundColor = "gray");
         event.target.style.backgroundColor = "rgb(136, 175, 136)";
 
 
