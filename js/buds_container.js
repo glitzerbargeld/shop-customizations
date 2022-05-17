@@ -26,8 +26,10 @@ const container = document.querySelectorAll('.bud-container');
         var attribute = event.target.getAttribute("data-el");
         select.value = attribute; 
         dropdownselect.change();
+        if(attribute != "1g") {
         container.forEach(el => el.style.backgroundColor = "gray");
         event.target.style.backgroundColor = "rgb(136, 175, 136)";
+        }
 
 
     }));
