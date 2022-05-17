@@ -69,7 +69,7 @@ function container_size_buds_new(){
     echo '
       <div class="content">
         <div class="glass-wrapper">
-            <div class="baggie-wrapper>
+            <div class="baggie-wrapper">
                 <div class="baggie bud-container" data-el="1g">
                     <p>1g</p>
                 </div>
