@@ -67,8 +67,11 @@ function container_size_buds_new(){
     wp_enqueue_script( 'buds_container');
 
     echo '
-      <div class="content"> <div class="glass-wrapper">
-      <div class="baggie-wrapper><div class="baggie bud-container" data-el="1g"><p>1g</p></div></div>
+      <div class="content">
+        <div class="glass-wrapper">
+            <div class="baggie-wrapper>
+                <div class="baggie bud-container" data-el="1g"><p>1g</p></div>
+            </div>
             <span class="glass"><div class="buds bud-container" data-el="2g">2g</div></span>
             <span class="glass"><div class="buds bud-container" data-el="5g">5g</div></span>
             <span class="glass"><div class="buds bud-container" data-el="10g"">10g</div></span>
