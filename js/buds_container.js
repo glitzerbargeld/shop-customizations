@@ -26,15 +26,15 @@ const container = document.querySelectorAll('.bud-container');
         var attribute = event.target.getAttribute("data-el");
         select.value = attribute; 
         dropdownselect.change();
+        container[0].parentElement.style.backgroundColor = "gray";
+        container.slice(1).forEach(el => el.style.backgroundColor = "gray");
+
         if(attribute != "1g") {
-        container.forEach(el => el.style.backgroundColor = "gray");
-        event.target.style.backgroundColor = "rgb(136, 175, 136)";
+            event.target.style.backgroundColor = "rgb(136, 175, 136)";
         }
         else {
-            container.parentElement.style.backgroundColor = "gray";
-            event.target.parentElement.style.backgroundColor = "rgb(136, 175, 136)";
+            event.target.style.backgroundColor = "#b89d79";
         }
-
 
     }));
 
