@@ -63,6 +63,7 @@ function sprinkles_customizations() {
 
 function container_size_buds_new(){
 
+    $baggie_farbe = get_field('deckelfarbe');
     wp_register_script( 'buds_container', plugins_url( '/js/buds_container.js', __FILE__ ), array( 'jquery' ), '1.0', true );
     wp_enqueue_script( 'buds_container');
 
@@ -70,7 +71,7 @@ function container_size_buds_new(){
       <div class="content">
         <div class="glass-wrapper">
             <div class="baggie-wrapper">
-                <div class="baggie bud-container" data-el="1g">
+                <div class="baggie bud-container" style="background:' . $baggie_farbe . ';" data-el="1g">
                     <p>1g</p>
                 </div>
             </div>
