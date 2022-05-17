@@ -33,7 +33,7 @@ const container = document.querySelectorAll('.bud-container');
             event.target.style.backgroundColor = "rgb(136, 175, 136)";
         }
         else {
-            event.target.style.backgroundColor = "#b89d79";
+            event.target.parentElement.style.backgroundColor = "#b89d79";
         }
 
     }));
