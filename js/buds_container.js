@@ -11,7 +11,7 @@ const container = document.querySelectorAll('.bud-container');
 
     container.forEach(el => {
         if (selectoptionsarray.includes(el.getAttribute("data-el"))) {
-            el.parentElement.style.display = "block";
+            el.parentElement.style.display = "flex";
         }
         if (el.getAttribute("data-el") == select.value) {
             el.style.backgroundColor = "rgb(136, 175, 136)"
@@ -23,7 +23,8 @@ const container = document.querySelectorAll('.bud-container');
 
     container.forEach(el => el.addEventListener('click', event => {
         event.preventDefault();
-        select.value = event.target.getAttribute("data-el");
+        var attribute = event.target.getAttribute("data-el");
+        select.value = attribute; 
         dropdownselect.change();
         container.forEach(el => el.style.backgroundColor = "gray");
         event.target.style.backgroundColor = "rgb(136, 175, 136)";
