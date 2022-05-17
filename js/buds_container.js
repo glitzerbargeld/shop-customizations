@@ -30,6 +30,10 @@ const container = document.querySelectorAll('.bud-container');
         container.forEach(el => el.style.backgroundColor = "gray");
         event.target.style.backgroundColor = "rgb(136, 175, 136)";
         }
+        else {
+            container.parentElement.style.backgroundColor = "gray";
+            event.target.parentElement.style.backgroundColor = "rgb(136, 175, 136)";
+        }
 
 
     }));
