@@ -27,7 +27,7 @@ const container = document.querySelectorAll('.bud-container');
         select.value = attribute; 
         dropdownselect.change();
         container[0].parentElement.style.backgroundColor = "gray";
-        container.slice(1).forEach(el => el.style.backgroundColor = "gray");
+        container.forEach(el => el.style.backgroundColor = "gray");
 
         if(attribute != "1g") {
             event.target.style.backgroundColor = "rgb(136, 175, 136)";
