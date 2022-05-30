@@ -10,6 +10,7 @@
 
 include 'inc/seo.php';
 
+wp_enqueue_style( 'custom-shop-styles', plugins_url( '/css/styles.css', __FILE__ ));
 
 /** Fügt die Produktinfos "CBD-Anteil" und "Anbaumethode" zu den Blüten auf der Shop Übersicht hinzu */
 #######################################################################################################
