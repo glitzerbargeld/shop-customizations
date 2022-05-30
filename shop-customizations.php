@@ -124,9 +124,11 @@ add_action('woocommerce_review_order_before_submit', 'moosendOptIn');
 function moosendOptIn() {
     echo ' 
     <div>
-      <p><input type="checkbox" id="moosend-optin" name="Email Optin"
-             checked>
-      <label for="scales">Ich möchte spannende News und aktuelle Angebote von SANALEO per Email erhalten.</label></p>
+      <p>
+      <label for="scales">
+      <input type="checkbox" id="moosend-optin" name="Email Optin"
+      checked><span>Ich möchte spannende News und aktuelle Angebote von SANALEO per Email erhalten.</span>
+      </label></p>
     </div>
     
     ';
