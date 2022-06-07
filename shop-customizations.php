@@ -118,7 +118,7 @@ function fourTwenty_customizations() {
 
 /**ADD CHECHBOX FOR EMAIL OPT-IN */
 
-
+/*
 add_action('woocommerce_review_order_before_submit', 'moosendOptIn');
 
 
@@ -133,4 +133,4 @@ function moosendOptIn() {
     </div>
     
     ';
-}
+} */
